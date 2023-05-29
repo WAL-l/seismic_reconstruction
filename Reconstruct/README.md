@@ -1,10 +1,4 @@
-# RePaint
-**Inpainting using Denoising Diffusion Probabilistic Models**
-
-
-CVPR 2022 [[Paper]](https://bit.ly/3b1ABEb)
-
-[![Denoising_Diffusion_Inpainting_Animation](https://user-images.githubusercontent.com/11280511/150849757-5cd762cb-07a3-46aa-a906-0fe4606eba3b.gif)](#)
+# Reconstuct
 
 ## Setup
 
@@ -19,20 +13,11 @@ git clone https://github.com/andreas128/RePaint.git
 pip install numpy torch blobfile tqdm pyYaml pillow    # e.g. torch 1.7.1+cu110.
 ```
 
-### 3. Download models and data
-
-```bash
-pip install --upgrade gdown && bash ./download.sh
-```
-
-That downloads the models for ImageNet, CelebA-HQ, and Places2, as well as the face example and example masks.
-
-
 ### 4. Run example
 ```bash
-python test.py --conf_path confs/face_example.yml
+python test.py --conf_path confs/example.yml
 ```
-Find the output in `./log/face_example/inpainted`
+Find the output in `./log/example/inpainted`
 
 *Note: After refactoring the code, we did not reevaluate all experiments.*
 
